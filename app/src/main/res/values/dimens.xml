@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="user_image_width">130dp</dimen>
+    <dimen name="user_image_height">130dp</dimen>
+    <dimen name="useR_image_margin_top">40dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+    <dimen name="margin_right">10dp</dimen>
+    <dimen name="bio_width">230dp</dimen>
+    <dimen name="card_margin_right">20dp</dimen>
+    <dimen name="carf_margin_left">20dp</dimen>
+    <dimen name="card_margin_top">10dp</dimen>
+    <dimen name="card_margin_left">10dp</dimen>
+    <dimen name="title_top">50dp</dimen>
+    <dimen name="image_item_coordinates">130dp</dimen>
+</resources>

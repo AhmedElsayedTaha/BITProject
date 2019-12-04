@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.heaven7.android.StickyLayout.StickyNavigationLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/stickyLayout"
+    app:stickyLayout_top_id="@+id/top_view"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.heaven7.android.StickyLayout.NestedScrollFrameLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_right">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImg"
+                android:layout_width="@dimen/user_image_width"
+                android:layout_height="@dimen/user_image_height"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/useR_image_margin_top"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginTop="@dimen/title_top"
+
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@+id/userImg"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:textSize="17sp"
+                app:layout_constraintLeft_toRightOf="@+id/userImg"
+                app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+            <TextView
+                android:id="@+id/bio"
+                android:layout_width="@dimen/bio_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                app:layout_constraintLeft_toRightOf="@+id/userImg"
+                app:layout_constraintTop_toBottomOf="@+id/location" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.heaven7.android.StickyLayout.NestedScrollFrameLayout>
+
+
+    <include layout="@layout/home_layout" />
+
+
+</com.heaven7.android.StickyLayout.StickyNavigationLayout>

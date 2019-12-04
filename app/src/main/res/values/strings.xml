@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BITProjectTask</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="close">Close</string>
+</resources>
